@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="185"
+   viewBox="0 0 150.00001 185"
+   id="svg4958"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="LogInHead.svg">
+  <defs
+     id="defs4960">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4767-2-5-6">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect4769-7-5-6"
+         width="212.13203"
+         height="119.198"
+         x="459.61942"
+         y="282.62598" />
+    </clipPath>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4929">
+      <g
+         id="g4931"
+         transform="matrix(0.81479047,0,0,0.79573011,72.857659,132.62185)">
+        <rect
+           y="203.83406"
+           x="472.7514"
+           height="160.61426"
+           width="230.31477"
+           id="rect4933"
+           style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <ellipse
+           ry="49.456013"
+           rx="49.456009"
+           cy="210.27353"
+           cx="577.81238"
+           id="ellipse4935"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.08797669;stroke-opacity:1" />
+      </g>
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="325"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4963">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-867.36226)">
+    <g
+       transform="translate(-24.999997,715.00006)"
+       id="g4937">
+      <ellipse
+         ry="49.456013"
+         rx="49.456009"
+         cy="202.3622"
+         cx="100"
+         id="path4751-0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.08797669;stroke-opacity:1" />
+      <path
+         mask="url(#mask4929)"
+         sodipodi:nodetypes="ccccc"
+         transform="matrix(1.2273094,0,0,1.2567075,-568.2363,-167.613)"
+         inkscape:connector-curvature="0"
+         clip-path="url(#clipPath4767-2-5-6)"
+         id="path4753-1-6-8"
+         d="m 544.47266,317.98047 c -33.47402,-1.7e-4 -60.60997,37.08615 -60.60938,82.83398 11.00097,20.13281 120.51596,11.23337 121.21857,-1.5e-4 5.9e-4,-45.74782 -27.13535,-82.83414 -60.60937,-82.83398 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
