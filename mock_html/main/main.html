@@ -1,0 +1,100 @@
+<head>
+<style>
+.tile {
+    width:30.0%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5%;
+    background-size: 25%;
+    cursor: pointer;
+}
+.tile:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.tileCentre {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tileContent {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    background:rgba(0,0,0,0.5);
+    color: #ffffff;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+
+.tile:hover .categoryDescription {
+    max-height: 100px;
+}
+
+.categoryDescription {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+</style>
+</head>
+<body style="margin:0">
+
+    <div id="topBanner" style="background:#4c6fc7;height:60px;padding:10px">
+        <img src="pb.svg" alt="purple brolly" style="height:100%">
+    </div>
+
+<div id="mainSection" style="padding-left:20%;padding-right:20%;padding-top:1%">
+<div class="tile" style="background:#4eff00;background-image:url('historical.png');background-size:100%">
+    <div class="tileContent" >Historical
+        <div class="categoryDescription">
+            Tours steeped in history with knowlegable guides explaining the 
+            significance of locations easily overlooked
+        </div>
+    </div>
+</div><!--
+--><div class="tile tileCentre" style="background:#ff00d5;background-image:url('ghost_tours.png');background-size:100%" >
+    <div class="tileContent" >Ghost Tours
+        <div class="categoryDescription">
+            Get frightened out of your wits on spooky guided walks through
+            atmospheric streets with murky pasts...
+        </div>
+    </div>
+</div><!--
+--><div class="tile" style="background:#000eff;background-image:url('famous_people.png');background-size:100%">
+    <div class="tileContent" >Famous People
+        <div class="categoryDescription">
+            Discover places which the great and the good called home, worked or played
+            and get closer to your heroes
+        </div>
+    </div>
+</div><!--
+--><div class="tile" style="background:#4eff00;background-image:url('architecture.png');background-size:100%">
+    <div class="tileContent" >Architecture
+        <div class="categoryDescription">
+            Get introduced to the most awe-inspiring buildings and structures your location has to offer
+        </div>
+    </div>
+</div><!--
+--><div class="tile tileCentre" style="background:#ff00d5;background-image:url('film_and_tv.png');background-size:100%">
+    <div class="tileContent" >Film and TV
+        <div class="categoryDescription">
+            Become star-struck as you're guided around locations familiar and famous from featuring on the big or small screen
+        </div>
+    </div>
+</div><!--
+--><div class="tile" style="background:#000eff;background-image:url('literature.png');background-size:100%">
+    <div class="tileContent" >Literature
+        <div class="categoryDescription">
+            Visit places that inspired literature, places that featured in literature and places where the great authors lived
+            and worked
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
