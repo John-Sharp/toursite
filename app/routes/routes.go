@@ -16,6 +16,20 @@ func (_ tApp) Index(
 }
 
 
+type tCategory struct {}
+var Category tCategory
+
+
+func (_ tCategory) Browse(
+		category string,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "category", category)
+	return revel.MainRouter.Reverse("Category.Browse", args).Url
+}
+
+
 type tTestRunner struct {}
 var TestRunner tTestRunner
 

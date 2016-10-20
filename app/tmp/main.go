@@ -36,7 +36,24 @@ func main() {
 				Args: []*revel.MethodArg{ 
 				},
 				RenderArgNames: map[int][]string{ 
-					10: []string{ 
+					55: []string{ 
+						"cats",
+					},
+				},
+			},
+			
+		})
+	
+	revel.RegisterController((*controllers.Category)(nil),
+		[]*revel.MethodType{
+			&revel.MethodType{
+				Name: "Browse",
+				Args: []*revel.MethodArg{ 
+					&revel.MethodArg{Name: "category", Type: reflect.TypeOf((*string)(nil)) },
+				},
+				RenderArgNames: map[int][]string{ 
+					11: []string{ 
+						"categoryEntry",
 					},
 				},
 			},

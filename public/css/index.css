@@ -1,0 +1,40 @@
+.tile {
+    width:30.0%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5%;
+    background-size: 25%;
+    cursor: pointer;
+}
+.tile:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.tileCentre {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tileContent {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    background:rgba(0,0,0,0.5);
+    color: #ffffff;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+
+.tile:hover .categoryDescription {
+    max-height: 100px;
+}
+
+.categoryDescription {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+

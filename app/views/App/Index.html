@@ -1,21 +1,20 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
 
-<header class="jumbotron" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
-    </div>
-  </div>
-</header>
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
 
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
+<div id="mainSection" style="padding-left:20%;padding-right:20%;padding-top:1%">
+{{range .cats}}
+<a href="{{.Url}}">
+<div class="tile" style="background-image:url('public/img/category_images/{{.ImagePath}}');background-size:100%">
+    <div class="tileContent" >{{.Name}}
+        <div class="categoryDescription">
+            {{.Description}}
+        </div>
     </div>
-  </div>
+</div>
+</a>
+{{end}}
 </div>
 
 {{template "footer.html" .}}
