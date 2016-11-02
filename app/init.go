@@ -1,6 +1,36 @@
 package app
 
-import "github.com/revel/revel"
+import (
+    "github.com/revel/revel"
+	"github.com/revel/modules/db/app"
+    "gopkg.in/gorp.v1"
+    "github.com/john-sharp/toursite/app/models"
+    "log"
+    "os"
+)
+
+var (
+    Dbm *gorp.DbMap
+)
+
+func InitDB() {
+    db.Init()
+    Dbm = &gorp.DbMap{Db: db.Db, Dialect: gorp.MySQLDialect{
+        Engine: "InnoDB"}}
+
+	setColumnSizes := func(t *gorp.TableMap, colSizes map[string]int) {
+		for col, size := range colSizes {
+			t.ColMap(col).MaxSize = size
+		}
+	}
+
+    t := Dbm.AddTableWithName(models.Tour{}, "tours").SetKeys(true, "Id")
+	setColumnSizes(t, map[string]int{
+		"Title": 255,
+	})
+
+    Dbm.TraceOn("[gorp]", log.New(os.Stdout, "myapp:", log.Lmicroseconds))
+}
 
 func init() {
 	// Filters is the default set of global filters.
@@ -21,7 +51,7 @@ func init() {
 
 	// register startup functions with OnAppStart
 	// ( order dependent )
-	// revel.OnAppStart(InitDB)
+	revel.OnAppStart(InitDB)
 	// revel.OnAppStart(FillCache)
 }
 

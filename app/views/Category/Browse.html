@@ -1,3 +1,7 @@
 {{template "header.html" .}}
 
 <h1> {{.categoryEntry.Name}} </h1>
+
+{{range .tourCatalogueEntries}}
+<div> <h2>{{.Title}}</h2> {{.Operator}} <div>{{.Description}}</div> </div>
+{{end}}
