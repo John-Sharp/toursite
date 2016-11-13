@@ -22,7 +22,7 @@ func getTourCatalogueEntries(list *[]models.TourCatalogueEntry, categoryId int) 
 func (c Category) Browse(category string) revel.Result {
     categoryEntry := GetCategoryEntryFromUrl(category)
     var tourCatalogueEntries []models.TourCatalogueEntry
-    err := getTourCatalogueEntries(&tourCatalogueEntries, 1)
+    err := getTourCatalogueEntries(&tourCatalogueEntries, categoryEntry.Id)
 
     if err != nil {
         log.Fatalln(err)

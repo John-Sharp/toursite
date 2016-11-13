@@ -4,20 +4,6 @@ package routes
 import "github.com/revel/revel"
 
 
-type tCategory struct {}
-var Category tCategory
-
-
-func (_ tCategory) Browse(
-		category string,
-		) string {
-	args := make(map[string]string)
-	
-	revel.Unbind(args, "category", category)
-	return revel.MainRouter.Reverse("Category.Browse", args).Url
-}
-
-
 type tApp struct {}
 var App tApp
 
@@ -30,32 +16,17 @@ func (_ tApp) Index(
 }
 
 
-type tStatic struct {}
-var Static tStatic
+type tCategory struct {}
+var Category tCategory
 
 
-func (_ tStatic) Serve(
-		prefix string,
-		filepath string,
+func (_ tCategory) Browse(
+		category string,
 		) string {
 	args := make(map[string]string)
 	
-	revel.Unbind(args, "prefix", prefix)
-	revel.Unbind(args, "filepath", filepath)
-	return revel.MainRouter.Reverse("Static.Serve", args).Url
-}
-
-func (_ tStatic) ServeModule(
-		moduleName string,
-		prefix string,
-		filepath string,
-		) string {
-	args := make(map[string]string)
-	
-	revel.Unbind(args, "moduleName", moduleName)
-	revel.Unbind(args, "prefix", prefix)
-	revel.Unbind(args, "filepath", filepath)
-	return revel.MainRouter.Reverse("Static.ServeModule", args).Url
+	revel.Unbind(args, "category", category)
+	return revel.MainRouter.Reverse("Category.Browse", args).Url
 }
 
 
@@ -95,6 +66,35 @@ func (_ tTestRunner) List(
 	args := make(map[string]string)
 	
 	return revel.MainRouter.Reverse("TestRunner.List", args).Url
+}
+
+
+type tStatic struct {}
+var Static tStatic
+
+
+func (_ tStatic) Serve(
+		prefix string,
+		filepath string,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "prefix", prefix)
+	revel.Unbind(args, "filepath", filepath)
+	return revel.MainRouter.Reverse("Static.Serve", args).Url
+}
+
+func (_ tStatic) ServeModule(
+		moduleName string,
+		prefix string,
+		filepath string,
+		) string {
+	args := make(map[string]string)
+	
+	revel.Unbind(args, "moduleName", moduleName)
+	revel.Unbind(args, "prefix", prefix)
+	revel.Unbind(args, "filepath", filepath)
+	return revel.MainRouter.Reverse("Static.ServeModule", args).Url
 }
 
 
